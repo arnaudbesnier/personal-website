@@ -3,18 +3,127 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PersonalWebsite</title>
+    <link href="/favicon.ico?v=2" rel="shortcut icon">
+    <title>Arnaud Besnier • Personal Website</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
     {{content-for "head"}}
 
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/personal-website.css">
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
     {{content-for "head-footer"}}
   </head>
   <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Arnaud Besnier</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li id='nav-about'><a href="/">About</a></li>
+            <li id='nav-photos'><a href="/photos">Photos</a></li>
+            <li id='nav-skills'><a href="/">Skills</a></li>
+            <li id='nav-influencers'><a href="/">Influencers</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id='container'>
+      <div id='panel-left'>
+        <img id='photo-profile' alt='me, Bob and Sully' src='images/face-off.jpg'>
+        <p>Hi!</p>
+        <p>If you want to know more about me, this is the right spot. Explore my world and contact me if you need.</p>
+        <br>
+        <p><i class="fa fa-home" aria-hidden="true"></i> &nbspToronto (Canada)</p>
+        <p><i class="fa fa-magic" aria-hidden="true"></i> &nbsphacker in residence</p>
+        <p><i class="fa fa-users" aria-hidden="true"></i> &nbsp<a href='https://efounders.co'>eFounders</a></p>
+        <p><i class="fa fa-inbox" aria-hidden="true"></i> &nbsp<a href='mailto:arnaudibesnier@gmail.com'>arnaudIbesnier@gmail.com</a></p>
+        <div id='panel-menu'>
+          <ul id='social-list'>
+            <li class='social_item'>
+              <div id="facebook_social_container">
+                <a href="http://www.facebook.com/arnaud.besnier" target='_blank' style="float: left;">
+                  <img id="facebook_link" class='social_link' alt='Facebook' title="Let's be friends" src="images/social-networks/facebook-off.png">
+                </a>
+              </div>
+            </li>
+            <li class='social_item'>
+              <div id="twitter_social_container">
+                <a href="http://twitter.com/arnaud_besnier" target='_blank' style="float: left;">
+                  <img id="twitter_link" class='social_link' alt='Twitter' title='Say something' src="images/social-networks/twitter-off.png">
+                </a>
+              </div>
+            </li>
+            <li class='social_item'>
+              <div id="instagram_social_container">
+                <a href="http://instagram.com/ribens" target='_blank' style="float: left;">
+                  <img id="instagram_link" class='social_link' alt='Instagram' title='Captured life moments' src="images/social-networks/instagram-off.png">
+                </a>
+              </div>
+            </li>
+            <li class='social_item' style='margin-right: 0;'>
+              <div id="soundcloud_social_container">
+                <a href="http://soundcloud.com/arnaud_besnier" target='_blank' style="float: left;">
+                  <img id="soundcloud_link" class='social_link' alt='Soundcloud' title='Recycled sounds' src="images/social-networks/soundcloud-off.png">
+                </a>
+              </div>
+            </li>
+            <li class='social_item'>
+              <div id="dribbble_social_container">
+                <a href="http://dribbble.com/arnaud_besnier" target='_blank' style="float: left;">
+                  <img id="dribbble_link" class='social_link' alt='Dribbble' title='Visual inspirations' src="images/social-networks/dribbble-off.png">
+                </a>
+              </div>
+            </li>
+            <li class='social_item'>
+              <div id="medium_social_container">
+                <a href="https://medium.com/@arnaudbesnier" target='_blank' style="float: left;">
+                  <img id="medium_link" class='social_link' alt='medium' title='Express yourself' src="images/social-networks/medium-off.png">
+                </a>
+              </div>
+            </li>
+            <li class='social_item'>
+              <div id="github_social_container">
+                <a href="https://github.com/arnaudbesnier" target='_blank' style="float: left;">
+                  <img id="github_link" class='social_link' alt='github' title='Hackers playground' src="images/social-networks/github-off.png">
+                </a>
+              </div>
+            </li>
+            <li class='social_item' style='margin-right: 0;'>
+              <div id="linkedin_social_container">
+                <a href="http://fr.linkedin.com/in/arnaudbesnier" target='_blank' style="float: left;">
+                  <img id="linkedin_link" class='social_link' alt='LinkedIn' title='Professional skills' src="images/social-networks/linkedin-off.png">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     {{content-for "body"}}
 
     <script src="assets/vendor.js"></script>

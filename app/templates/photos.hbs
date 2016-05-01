@@ -1,0 +1,11 @@
+<div id='main-view'>
+  <div id='photos-header'>
+    <p class='post'>As a child, my parents gave me the opportunity to travel all around the world. I visited the West Indies, Spain, Tunisia, Morocco, England, Greece, Thailand and Mexico. As an adult, I continued to travel with a camera to make my own memories. I am photography beginner using a <a href='http://en.wikipedia.org/wiki/Canon_EOS_100D' target='_blank'>Canon 100D</a> camera (with a Canon EF-S 18-55 STM lens). The latest countries I have visited are the U.S.A. (New York / Boston / Providence), Indonesia (Bali & Gili Islands), Corsica (GR20) and Portugal. I now live in Toronto (Canada).</p>
+    <p class='post'>Here a few photographies I especially like. You can also look at my <a href='https://www.instagram.com/ribens/' target='_blank'>Instagram</a> for more frivolous moments.</p>
+    <br>
+    <p><i>“You don't take a photograph, you make it.”</i>― Ansel Adams</p>
+  </div>
+  {{#each model as |photo|}}
+    {{photo-framed photo=photo}}
+  {{/each}}
+</div>
