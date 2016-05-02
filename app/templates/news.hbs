@@ -1,0 +1,10 @@
+<div id='main-view'>
+  <div style='min-height: 400px;'>
+    <div id='news'>
+      {{#each model as |post|}}
+        {{post-item post=post}}
+      {{/each}}
+    </div>
+  </div>
+</div>
+{{outlet}}
