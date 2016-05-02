@@ -70,17 +70,33 @@ a > h4:hover {
 }
 
 p > a {
-	//color: $font_color_second;
 	text-decoration: underline;
 }
 
-p > a:hover {
-	color: $color-hover; //font_color_third;
+p > a:hover, p > i > a:hover, li > a:hover {
+	color: $color-hover;
 	text-decoration: underline;
+}
+
+div#news > h2, div#news > h3, div#news > p.date, div#news > p.quote, div#news > p.post {
+	@media (max-width: 640px) {
+		padding: 0 16px;
+	}
+}
+
+div#container-news {
+	@media (max-width: 640px) {
+		padding: 0 8px;
+	}
 }
 
 div#container-about {
-	padding: 5px 20px;
+	@media (max-width: 640px) {
+		padding: 5px 8px;
+	}
+	@media (min-width: 640px) {
+		padding: 5px 20px;
+	}
 
 	p {
 		font-size: 20px;
@@ -90,7 +106,7 @@ div#container-about {
 	}
 }
 
-p > a, h2 > a {
+p > a, p > i > a, li > a, h2 > a {
 	color: $color-active;
 }
 
